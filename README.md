@@ -1,5 +1,5 @@
 # Jarditou
 # Jarditou
-git commit -m "texte"
 git add .
+git commit -m "texte"
 git push
