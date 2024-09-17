@@ -26,8 +26,9 @@ a {
 }
 
 a:hover {
-    color: rgb(61, 173, 16);
-    text-decoration: underline;
+    transition: 0.5s;
+    color: rgb(37, 110, 8);
+    text-decoration: none;
 }
 
 .header {
@@ -42,6 +43,11 @@ a:hover {
 
 .header-text {
     font-size: 18px;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .main-content {
@@ -63,4 +69,31 @@ a:hover {
 
 .bloc-droite {
     background-color: grey;
+    border-radius: 25px;
+}
+
+form, input {
+    border-radius: 5px;
+}
+
+.btn1 {
+    margin-right: 10px;
+    font-size: 1rem;
+
+}
+
+.btn1:hover {
+    background-color: rgb(37, 110, 8);
+    
+}
+
+.btn2 {
+    margin-right: 10px;
+    font-size: 1rem;
+
+}
+
+.btn2:hover {
+    background-color: red;
+    
 }
