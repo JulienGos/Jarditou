@@ -3,6 +3,23 @@
     src: url("../Font/made_carving_soft/carvin.otf");
 }
 
+@keyframes slideUp {
+    from {
+        transform: translateY(1000px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: "carvin", sans-serif;
 }
@@ -65,11 +82,13 @@ h1 {
 .bloc-gauche {
     background-color: white;
     margin-right: 20px;
+    animation: slideUp 1s ease-out;
 }
 
 .bloc-droite {
     background-color: grey;
     border-radius: 25px;
+    animation: slideUp 1s ease-out;
 }
 
 form, input {
