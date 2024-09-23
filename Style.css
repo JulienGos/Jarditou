@@ -43,7 +43,7 @@ a {
 }
 
 a:hover {
-    transition: 0.5s;
+    transition: 0.2s;
     color: rgb(37, 110, 8);
     text-decoration: none;
 }
@@ -60,6 +60,11 @@ a:hover {
 
 .header-text {
     font-size: 18px;
+}
+
+.img {
+    max-width: 100%;
+    box-shadow: 0 5px 5px black;
 }
 
 h1 {
@@ -113,6 +118,6 @@ form, input {
 }
 
 .btn2:hover {
-    background-color: red;
+    background-color: rgb(206, 30, 30);
     
 }

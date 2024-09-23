@@ -26,11 +26,11 @@
             </ul>
         </nav>
     </header>
-    <img src="../jarditou/images/promotion.jpg" alt="Image Promotion" title="Image Promotion" width="1850">
+    <img src="../jarditou/images/promotion.jpg" alt="Image Promotion" title="Image Promotion" width="1850" class="img">
     <h1 id="Contact">Contact</h1>
     <hr>
     <br>
-    <form action="Accueil.html">
+    <form action="display.html" id="myForm">
         <p>* Ces zones sont obligatoires</p>
         <fieldset>
             <br>
@@ -38,9 +38,9 @@
             <label for="nom">Nom* : </label><input type="text" id="nom" name="nom" required> <br><br>
             <label for="prenom">Prénom* : </label><input type="text" id="prenom" name="prenom" required> <br><br>
             <label>Genre* : </label>
-            <label for="homme">Homme</label><input type="radio" name="homme" id="homme" value="homme">
-            <label for="femme">Femme</label><input type="radio" name="femme" id="femme" value="femme">
-            <label for="autre">Autre</label><input type="radio" name="autre" id="autre" value="autre"> <br><br>
+            <label for="homme">Homme</label><input type="radio" name="homme" id="genre" value="homme">
+            <label for="femme">Femme</label><input type="radio" name="femme" id="genre" value="femme">
+            <label for="autre">Autre</label><input type="radio" name="autre" id="genre" value="autre"> <br><br>
 
             <label for="date">Date de naissance* : </label><input type="date" name="date" id="date" required> <br><br>
             <label for="codePostal">Code Postal* : </label><input type="text" id="codePostal" name="codePostal" required> <br><br>
@@ -70,6 +70,7 @@
             <li><a href="plan_du_site.html">Plan du site</a></li>
         </ul>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
