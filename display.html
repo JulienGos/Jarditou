@@ -29,7 +29,16 @@
     <img src="../jarditou/images/promotion.jpg" alt="Image Promotion" title="Image Promotion" width="1850">
     <h1>Données soumises</h1>
 
-    <p>Nom : <span id="displayNom"></span></p>
+    <p>Nom: <span id="displayNom"></span></p>
+    <p>Prénom: <span id="displayPrenom"></span></p>
+    <p>Genre: <span id="displayGenre"></span></p>
+    <p>Date de Naissance: <span id="displayDate"></span></p>
+    <p>Code Postal: <span id="displayCodePostal"></span></p>
+    <p>Adresse: <span id="displayAdresse"></span></p>
+    <p>Ville: <span id="displayVille"></span></p>
+    <p>Email: <span id="displayEmail"></span></p>
+    <p>Sujet: <span id="displaySujet"></span></p>
+    <p>Votre Question: <span id="displayQuestion"></span></p>
 
     <footer>
         <ul>
@@ -38,7 +47,18 @@
             <li><a href="plan_du_site.html">Plan du site</a></li>
         </ul>
     </footer>
-    <script src="script.js"></script>
+    <script>
+        document.getElementById("displayNom").innerText = localStorage.getItem('nom');
+        document.getElementById("displayPrenom").innerText = localStorage.getItem('prenom');
+        document.getElementById("displayGenre").innerText = localStorage.getItem('genre');
+        document.getElementById("displayDate").innerText = localStorage.getItem('date');
+        document.getElementById("displayCodePostal").innerText = localStorage.getItem('codePostal');
+        document.getElementById("displayAdresse").innerText = localStorage.getItem('adresse');
+        document.getElementById("displayVille").innerText = localStorage.getItem('ville');
+        document.getElementById("displayEmail").innerText = localStorage.getItem('email');
+        document.getElementById("displaySujet").innerText = localStorage.getItem('sujet');
+        document.getElementById("displayQuestion").innerText = localStorage.getItem('votreQuestion');
+    </script>
 </body>
 
 </html>
